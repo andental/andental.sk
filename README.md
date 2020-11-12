@@ -1,0 +1,1 @@
+# andental.sk
