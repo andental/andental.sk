@@ -1,0 +1,149 @@
+
+p {
+  font-size: 15px;
+  line-height: 25px;
+}
+
+section {
+  padding: 25px 0 35px;
+  background: #fff;
+}
+
+body { 
+  position: relative; /* we need this for the scrollspy */ 
+  font-size: 14px;
+}
+
+a { color: #3CC; }
+
+a:hover { color: #FF0; }
+
+.primary-button a {
+  display: inline-block;
+  background-color: #51b5ae;
+  padding: 15px 24px;
+  border-radius: 3px;
+  text-transform: uppercase;
+  font-size: 11px;
+  color: #fff;
+  font-weight: 700;
+  text-decoration: none;
+  letter-spacing: 0.5px;
+}
+
+
+.parallax-content {
+  width: 100%;
+  min-height: 100vh;
+  background-size: cover;
+}
+
+
+.baner-content {
+  padding-top: 10vh;
+  text-align: center;
+  background: #fff;
+}
+
+.map-container {
+  padding-top: 10vh;
+  text-align: center;
+  background: #fff;
+}
+
+.baner-content h1 {
+  margin-top: 0px;
+  font-size: 128px;
+  color: #000;
+  font-weight: 100;
+  text-transform: uppercase;
+  margin-bottom: 0px;
+}
+
+.baner-content em {
+  color: #51b5ae;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.baner-content span {
+  display: inline-block;
+  font-weight: 100;
+  font-size: 32px;
+  color: #000;
+}
+
+.name {
+    font-size: 48px;
+    font-weight: 300;
+    margin-top: -20px;
+}
+
+.baner-content .primary-button {
+  margin-top: 15px;
+}
+
+h4, .h4 {
+  font-size: 18px;
+}
+
+
+section {
+  background-color: transparent;
+  padding-bottom: 15px;
+}
+
+.wrapper {
+  text-align: center;
+}
+
+.contact-form {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 30px 25px;
+  margin-bottom: 30px;
+}
+
+.map {
+  margin-bottom: 30px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 30px 20px;
+}
+
+.subtitle {
+  padding-top: 5vh;
+}
+
+.map-container {
+  padding-top: 5vh;
+}
+
+@media (max-width: 767px){
+  
+  .baner-content {
+    padding-top: 10vh;
+  }
+
+  .baner-content h1 {
+    font-size: 64px;
+  }
+
+  .baner-content em {
+  }
+
+  .baner-content span {
+    font-size: 24px;
+  }
+
+  .baner-content .primary-button {
+    margin-top: 15px;
+  }
+
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1170px;
+  }
+}
+
