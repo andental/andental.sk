@@ -170,3 +170,8 @@ section {
   height: 250px;
   margin: 2px;
 }
+
+.description {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
