@@ -24,6 +24,30 @@
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
 
         <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+
+        <!-- DO NOT FORGET TO SET YOUR OWN API KEY!  -->
+        <!-- Create an API key: -->
+        <!-- https://console.developers.google.com/apis/library/places-backend.googleapis.com/?q=places -->
+        <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=places&key=AIzaSyCWbYAJkpgnp6Nleo5el4AWTZcqES_cVQg&language=sk"></script>
+
+        <!-- load the plugin/script -->
+        <script src="./js/google-maps-reviews.js" defer></script>
+        <link href="./js/google-maps-reviews.css" rel="stylesheet">
+
+        <script type="text/javascript">
+            document.addEventListener("DOMContentLoaded", function(event) {
+                //Find a placeID via https://developers.google.com/places/place-id
+                googlePlaces("google-reviews", {
+                    placeId: 'ChIJzf5qL22PbEcRP8nyWNGp5tU',
+                    header: "",
+                    max_rows: 5,
+                    min_rating: 4,
+                    shorten_names: true,
+                    show_date: true,
+                    text_break_length: 1000
+                });
+            });
+        </script>
     </head>
 <!--
 Vanilla Template
@@ -74,6 +98,15 @@ https://templatemo.com/tm-526-vanilla
 
                         <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10641.782460842565!2d17.1288355!3d48.1787651!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xd5e6a9d158f2c93f!2sAnDental%20-%20MDDr.%20Katar%C3%ADna%20Antalov%C3%A1!5e0!3m2!1sen!2ssk!4v1605007610604!5m2!1sen!2ssk" width="100%" height="390" frameborder="0" style="border:0" allowfullscreen></iframe>
                 </div>
+        </div>
+
+        <div class="container review-container">
+            <h2>Referencie</h2>
+            <div id="google-reviews"></div>
+            <div class="primary-button">
+                <a href="https://search.google.com/local/reviews?placeid=ChIJzf5qL22PbEcRP8nyWNGp5tU&q=AnDental+-+MDDr.+Katar%C3%ADna+Antalov%C3%A1&hl=en&gl=SK">Zobraziť ďalšie</a>
+                <a href="https://search.google.com/local/reviews?placeid=ChIJzf5qL22PbEcRP8nyWNGp5tU&q=AnDental+-+MDDr.+Katar%C3%ADna+Antalov%C3%A1&hl=en&gl=SK">Pridať</a>
+            </div>
         </div>
 
         <div class="container foto-container">
