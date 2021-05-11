@@ -119,6 +119,15 @@ section {
   margin-top: 15px;
 }
 
+.description {
+  font-size: 18px;
+  font-weight: 100;
+  color: #000;
+  line-height: 32px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
 @media (max-width: 767px){
   
   .baner-content {
@@ -139,7 +148,6 @@ section {
   .baner-content .primary-button {
     margin-top: 15px;
   }
-
 }
 
 @media (min-width: 1200px) {
@@ -147,10 +155,9 @@ section {
     max-width: 1170px;
   }
 
-  .container.updates-container {
-    max-width: 640px;
+  .description {
+    font-size: 22px;
   }
-
 }
 
 
@@ -177,15 +184,6 @@ section {
   margin: 2px;
 }
 
-.description {
-  font-weight: 100;
-  font-size: 24px;
-  color: #000;
-  line-height: 32px;
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-
 .review-container h2 {
   font-weight: 100;
   margin-top: 20px;
@@ -199,21 +197,30 @@ section {
 }
 
 .updates {
-  display: flex;
-  flex-wrap: wrap;
   margin-bottom: 20px;
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
 }
 
 .updates-item {
   border: solid 1px rgba(190, 190, 190, .35);
   margin: 0 auto;
   padding: 1em;
-  flex: 1 1 100%;
+  flex: 0 0 auto;
+  width: 100%;
+  max-width: 300px;
+  min-width: 300px;
 }
 
 .updates-meta {
   text-align: center;
   font-size: 115%;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: inherit;
 }
 
 .updates-title {
