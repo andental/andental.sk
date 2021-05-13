@@ -33,6 +33,12 @@ a:hover { color: #FF0; }
   margin-bottom: 5px;
 }
 
+a.secondary {
+  background-color: #fff;
+  color: #51b5ae;
+  border: 1px solid #51b5ae;
+}
+
 
 .parallax-content {
   width: 100%;
