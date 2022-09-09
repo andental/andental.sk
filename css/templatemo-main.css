@@ -94,9 +94,10 @@ a.secondary {
 }
 
 .name {
-    font-size: 48px;
+    font-size: 32px;
     font-weight: 300;
     margin-top: -20px;
+    margin-bottom: 20px;
 }
 
 .baner-content .primary-button {
